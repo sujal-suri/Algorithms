@@ -60,6 +60,7 @@ void showQueue(Queue*q){
 }
 
 void finish(Queue*q){
+	free(q->que);
 	free(q);
 }
 
