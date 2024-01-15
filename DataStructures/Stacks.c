@@ -52,6 +52,19 @@ int peek(Stack*st){
 	return st->arr[st->top - 1];	
 }
 
+int isEmpty(Stack*st){
+	if(st->top==0){
+		return 1;
+	}
+	return 0;
+}
+
+int isFull(Stack*st){
+	if(st->top==st->size-1){
+		return 1;
+	}
+	return 0;
+}
 
 int main(int argc,char *argv[]){
 	int size;
