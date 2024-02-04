@@ -4,19 +4,16 @@
 int binSearch(int arr[],int l,int h,int x) {
     if (l <= h) {
         int mid=l+(h-l)/2;
-
         if (arr[mid]==x) {
             return mid;
         }
-
         if (arr[mid]>x) {
             return binSearch(arr,l,mid-1,x);
         } else {
             return binSearch(arr,mid+1,h,x);
         }
     }
-
-    return -1; // Element not found
+    return -1;
 }
 
 int main() {
