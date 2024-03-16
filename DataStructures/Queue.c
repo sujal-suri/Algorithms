@@ -10,7 +10,7 @@ typedef struct{
 
 
 //returns a que pointer with given size.
-Queue* initialize(int size){
+Queue* initialize_que(int size){
 	Queue*temp=(Queue*)malloc(sizeof(Queue));
 	if(temp==NULL){
 		return NULL;
@@ -59,7 +59,7 @@ void showQueue(Queue*q){
 	printf("\n");
 }
 
-void finish(Queue*q){
+void finish_que(Queue*q){
 	free(q->que);
 	free(q);
 }

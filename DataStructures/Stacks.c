@@ -9,7 +9,7 @@ typedef struct{
 
 //The stack is for positive integers.
 //Creates a stack of a particular Size dynamically.
-Stack * initialize(int sz){
+Stack * initialize_st(int sz){
 	Stack *st=(Stack *)malloc(sizeof(Stack));
 	st->size=sz;
 	st->top=0;
@@ -18,7 +18,7 @@ Stack * initialize(int sz){
 }
 
 //free the allocated memory.
-void finish(Stack *st){
+void finish_st(Stack *st){
 	free(st->arr);
 	free(st);
 }
